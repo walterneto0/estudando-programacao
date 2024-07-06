@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: rgb(25, 25, 25);
+    --cor2: rgb(50, 50, 50);
+    --cor3: rgb(201, 199, 199);
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: var(--cor2);
+}
+header {
+    background-color: var(--cor1);
+    height: 30px;
+    padding: 5px 0px 0px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.422);
+}
+header p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 1%;
+    padding-top: 2px;
+    width: 125px;
+}
+nav {
+    width: 30%;
+    margin: -26px 0px 0px 110px;
+    padding: 5px 0px 5px 0px;
+}
+nav img {
+    width: 25px;
+    margin: 0px 10px 0px 10%;
+}
+nav img:hover {
+    width: 24px;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin: 50px auto;
+    line-height: 0.7em;
+}
+h1 small {
+    font-size: 0.5em;
+}
+#ar-vid-com {
+    max-width: 800px;
+    margin: auto;
+}
+#video-comeco {
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    padding-bottom: 55%;
+    position: relative;
+}
+#video-comeco > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+#ar-vid-com aside {
+    background-color: var(--cor1);
+    color: white;
+    width: 86.4%;
+    padding: 10px 10px 10px 10px;
+    margin: -25px auto 20px auto;
+    border-radius: 5px 5px 10px 10px;
+}
+#ar-vid-com aside h2 {
+    text-align: center;
+}
+#ar-vid-com aside p {
+    text-align: justify;
+    text-indent: 15px;
+    width: 90%;
+    margin: auto;
+}
+#link-segredo {
+    text-decoration: none;
+    color: #fff;
+}
+article.thumbs {
+    background-color: var(--cor1);
+    width: 505px;
+    padding: 5px 15px 15px 15px;
+    margin: 30px auto;
+    border-radius: 10px
+}
+article.thumbs h2{
+    margin: 0px;
+    text-align: center;
+    padding: 10px 0px;
+    color: white;
+}
+div.thumbs {
+    text-align: center;
+}
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    font-family: var(--fonte1);
+}

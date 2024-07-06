@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de valores</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Some dois números</h1>
+    <main>
+        <input type="number" name="n1" id="n1"> +
+        <input type="number" name="n2" id="n2">
+        <input type="button" value="SOMAR" onclick="somar()">
+        <div id="resultado"></div>
+    </main>
+    <script>
+        function somar(){
+            tn1 = document.querySelector('input#n1')
+            tn2 = document.querySelector('input#n2')
+            res = document.querySelector('div#resultado')
+            n1 = Number(tn1.value)
+            n2 = Number(tn2.value)
+            s = n1 + n2
+            n1BRL = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            n2BRL = n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            sBRL = s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            res.innerHTML = `A soma de ${n1BRL} com ${n2BRL} é igual a <strong>${sBRL}</strong>`
+        }
+    </script>
+</body>
+</html>

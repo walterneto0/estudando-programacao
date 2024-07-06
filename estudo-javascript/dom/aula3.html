@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Radar de velocidade</h1>
+    <h2>Velocidade Máxima: <strong>80Km/h</strong></h2>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Verificar Velocidade" onclick="clique()">
+    <div id="res"></div>
+    <script>
+        function clique() {
+        const textvel = document.querySelector('input#vel');
+        const vel = Number(textvel.value);
+        const res = document.querySelector('div#res');
+        const velMax = 80;
+        if (vel >= velMax + 5) {
+            res.innerHTML = '<p>Você foi <strong>MULTADO</strong></p>';
+        } else {
+            res.innerHTML = '<p>Tudo certo</p>';
+        }
+    }
+    </script>
+</body>
+</html>

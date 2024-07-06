@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados da conta</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #f6f6f6d8;
+    }
+
+    header {
+      background: linear-gradient(to bottom right, rgb(184, 4, 4), rgba(107, 20, 20, 0.847));
+      margin: 0px;
+      padding: 10px 0px;
+      box-shadow: 0px 8px 15px #00000072;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin: 0;
+    }
+
+    #sigla {
+      text-align: center;
+      color: #fff;
+      margin: 0;
+    }
+
+    main {
+      margin: 0px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><strong>BCC</strong></h1>
+    <p id="sigla">Banco Central Controlador</p>
+  </header>
+  <main>
+    <h2>Situação da conta:</h2>
+  </main>
+  <script>
+    let idade = Number.parseInt(prompt("Qual sua idade?"));
+
+  if (idade >= 18) {
+    let confirmacaoDeNovato = confirm("Já possui conta BCC?");
+    if (confirmacaoDeNovato) {
+      // Caso tenha conta
+      let nome = prompt("Qual seu primeiro e último nome?");
+      if (nome.length > 5) {
+        // verifica se é um nome real
+        let novaSenha = prompt("Qual sua senha? Deve conter pelo menos cinco números. Não precisa de letras maiúsculas nem minúsculas");
+        novaSenha = novaSenha.toLowerCase();
+        if (novaSenha.length >= 5) {
+          let senha = prompt("Repita sua senha");
+          senha = senha.toLowerCase();
+          if (novaSenha === senha) {
+            // verifica se as senhas são iguais
+            document.write(`ATIVA <br><br> Seus dados: <br> Nome: ${nome} <br> Idade: ${idade} <br> Senha: ${senha} <br>`);
+            if (novaSenha == senha) {
+    var n1 = Number(window.prompt("Qual o seu saldo atual?")) //define quem é o primeiro número pegando o valor dentro do prompt e transformando-o em Number
+    if (!isNaN(n1)){ //se n1 for um número
+      var n2 = Number(window.prompt("Quanto você recebeu no PIX agora?")) //define o valor do segundo número da mesma forma que antes
+      if (!isNaN(n2)){ //se n2 for um número
+        var resultado = n1 + n2 //soma n1 e n2
+        if (Number.isInteger(resultado)){ //se o resultado é inteiro
+          n1 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          n2 = n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          resultado = resultado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          document.write(`Saldo anterior: ${n1} <br> Valor recebido: ${n2} <br> Saldo atual: <u><strong>${resultado}</strong></u>`) //diz o resultado da soma
+        } else{ //se não for inteiro
+          resultado = parseFloat(resultado.toFixed(2)) //arredonda e fixa o resultado apenas nas duas primeiras casas
+          n1 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          n2 = n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          resultado = resultado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          document.write(`Saldo anterior: ${n1} <br> Valor recebido: ${n2} <br> Saldo atual: <u><strong>${resultado}</strong></u>`) //diz o resultado da resultado
+        }
+      } else { //se n2 não for um número
+        window.alert(`Você não digitou um número`)
+      }
+    } else {
+      window.alert(`Você não digitou um número`) //se n2 não for um número
+    }
+  } else {
+    alert("erro");
+  }
+          } else {
+            alert("As senhas não são iguais.");
+            document.write("NEGADA");      
+          }
+        } else {
+          alert("A senha deve conter pelo menos 5 números");
+          document.write("NEGADA");
+        }
+      } else {
+        alert("O nome precisa ser válido");
+        document.write("NEGADA");
+      }
+    } else {
+      // Caso não tenha conta
+      let novato = confirm("Você deseja abrir uma conta?");
+      if (novato) {
+        // Se quiser abrir uma conta
+        let nome = prompt("Qual seu primeiro e último nome?");
+        if (nome.length > 5) {
+          let novaSenha = prompt("Qual sua senha? Deve conter pelo menos cinco números. Não precisa de letras maiúsculas nem minúsculas");
+          novaSenha = novaSenha.toLowerCase();
+          if (novaSenha.length >= 5) {
+            let senha = prompt("Repita sua senha");
+            senha = senha.toLowerCase();
+            if (novaSenha === senha) {
+              // verifica se as senhas são iguais
+              document.write(`ATIVA <br><br> Seus dados: <br> Nome: ${nome} <br> Idade: ${idade} <br> Senha: ${senha} <br>`);
+              if (novaSenha == senha) {
+    var n1 = Number(window.prompt("Qual o seu saldo atual?")) //define quem é o primeiro número pegando o valor dentro do prompt e transformando-o em Number
+    if (!isNaN(n1)){ //se n1 for um número
+      var n2 = Number(window.prompt("Quanto você recebeu no PIX agora?")) //define o valor do segundo número da mesma forma que antes
+      if (!isNaN(n2)){ //se n2 for um número
+        var resultado = n1 + n2 //soma n1 e n2
+        if (Number.isInteger(resultado)){ //se o resultado é inteiro
+          n1 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          n2 = n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          resultado = resultado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          document.write(`Saldo anterior: ${n1} <br> Valor recebido: ${n2} <br> Saldo atual: <u><strong>${resultado}</strong></u>`) //diz o resultado da soma
+        } else{ //se não for inteiro
+          resultado = parseFloat(resultado.toFixed(2)) //arredonda e fixa o resultado apenas nas duas primeiras casas
+          n1 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          n2 = n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          resultado = resultado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+          document.write(`Saldo anterior: ${n1} <br> Valor recebido: ${n2} <br> Saldo atual: <u><strong>${resultado}</strong></u>`) //diz o resultado da resultado
+        }
+      } else { //se n2 não for um número
+        window.alert(`Você não digitou um número`)
+      }
+    } else {
+      window.alert(`Você não digitou um número`) //se n2 não for um número
+    }
+  } else {
+    alert("erro");
+  }
+            } else {
+              alert("As senhas não são iguais.");
+              document.write("NEGADA");      
+            }
+          } else {
+            alert("A senha deve conter pelo menos 5 números");
+            document.write("NEGADA");
+          }
+        } else {
+          alert("O nome precisa ser válido");
+          document.write("NEGADA");
+        }
+      } else {
+        document.write("NEGADA");
+      }
+    }
+  } else {
+    // Menor de idade
+    alert("Você é de menor, portanto não pode abrir uma conta aqui");
+    document.write("NEGADA");
+  }
+</script>
+</body>
+</html>

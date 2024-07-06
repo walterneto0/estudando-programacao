@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            text-align: center;
+        }
+        main {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button id="mudaCor">Trocar cor do fundo</button>
+        <h1><strong>TUTS</strong></h1>
+    </main>
+
+    <script>
+        var butao = document.querySelector('button#mudaCor')
+        var corpo = document.body
+        
+       butao.addEventListener('click', function clique() {
+        if (corpo.style.backgroundColor == 'white') {
+            corpo.style.backgroundColor = 'black'
+            corpo.style.color = 'red'
+            butao.style.backgroundColor = 'red'
+            butao.style.color = 'white'
+        } else if (corpo.style.backgroundColor == 'black'){
+            corpo.style.backgroundColor = 'red'
+            corpo.style.color = 'white'
+            butao.style.backgroundColor = 'white'
+            butao.style.color = 'red'
+        } else {
+            corpo.style.backgroundColor = 'white'
+            corpo.style.color = 'black'
+            butao.style.background = 'red'
+            butao.style.color = 'black'
+        }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "android";
+    src: url(guia/fontes/IDroid.otf);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #84E1AD;
+}
+header {
+    background-image: linear-gradient(to bottom,#3DDA84,#1E6B41, #19472e);
+    margin: 0px;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0px auto 15px auto;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.525);
+}
+header > p {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0px auto 20px auto;
+    padding: 0px;
+    color: #fff;
+    width: 440px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.525);
+}
+nav > a {
+    color: #fff;
+    text-decoration: none;
+    margin: 2px 10px;
+    padding: 5px;
+}
+nav > a:hover {
+    background-color: #33ac69;
+    color: #000;
+    border-radius: 5px;
+}
+main {
+    width: 850px;
+    background-color: #fff;
+    margin: 0px auto 10px auto;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 8px 8px 20px 5px rgba(0, 0, 0, 0.478);
+    border-radius: 0px 0px 10px 10px;
+}
+section {
+    margin: 0px 10px;
+}
+#quatro-robos {
+    margin: 0px 15px;
+}
+#criadora {
+    margin: 0px 15px 0px 15px;
+    padding: 0px;
+}
+#bugdroid {
+    margin: 0px 265px;
+}
+#video {
+    background-color: #123f27;
+    margin: 0px 0px 15px 0px;
+    padding: 15px 25px;
+}
+.paragrafo::first-letter {
+    margin-left: 20px;
+}
+.paragrafo > strong {
+    color: #123f27;
+}
+.paragrafo > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #123f27;
+}
+.paragrafo > a::after {
+    content: "🔗";
+}
+.paragrafo > a:hover {
+    text-decoration: underline;
+}
+#artigo-final {
+    background-color: #84E1AD;
+    border-radius: 10px;
+    padding: 0px 0px 20px 0px;
+}
+#artigo-final > h4 {
+    background-color: #3cb472d1;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0px; 
+    padding: 10px;
+    color: #fff;
+}
+#artigo-final > .paragrafo {
+    padding: 0px 0px 10px 10px;
+}
+div.lista {
+    display: inline-block;
+}
+#lista-um {
+    margin-right: 250px;
+}
+li::before {
+    content: "✔";
+    font-weight: bolder;
+    margin-left: -20px; 
+    margin-right: 10px; 
+}
+h2, h3 {
+    font-family: 'android';
+    color: #125632;
+}
+h3 {
+    background-image: linear-gradient(to right, #DAF3E5, #fff);
+}
+footer {
+    background-color: #1A5C38;
+    font-size: 1.5em;
+    margin: 30px 0px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(207, 205, 205);
+}
+footer > p {
+    margin: 0px;
+}
+footer > p > a {
+    text-decoration: none;
+    color: #fff;
+}
+footer > p > a:hover {
+    text-decoration: underline;
+    color: #84E1AD;
+}
