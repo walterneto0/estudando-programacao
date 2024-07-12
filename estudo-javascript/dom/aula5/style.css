@@ -1,0 +1,46 @@
+body {
+    background: #90ddb3;
+}
+
+header {
+    color: #ffffff;
+    text-align: center;
+}
+
+main {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #00000060;
+    width: 500px;
+    margin: auto;
+}
+
+div#inf {
+    background: #e9e9e9a1;
+    padding: 5px 15px 15px 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #00000061;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+p#an {
+    margin: 10px 0px -10px 23px;
+    text-align: left;
+}
+
+input#verificar {
+    margin-left: 15px;
+}
+
+div#res {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+}
